@@ -1,0 +1,854 @@
+ID,Talk
+s1,you should just do update position. They set a block equal to
+S2 (girl),where is it?
+S1,the y position here
+S3,so what is it doing is it
+S3,because you're not updating the velocity
+s1,"why don't you just set the y velocity before the simulation,"
+s3,oh right
+s3,huh?
+s3,set y velocity before the simulation
+s1,it doesn't do anything
+s3,maybe update position doesn't do
+s1,oh yeah you're right
+s1,let's just not use that one
+s3,so just do
+s3,change y you have to change the y position by
+s3,delta t times the velocity
+s3,Or you can change to that because you have to change the x and y
+s3,not yet right now we're just doing
+s3,right now we're seeing if it can move up.
+s3,"I mean, we're given an X and y grid on that so"
+s1,there we go that's it
+s1,so first let's do our if statements so let's stop it when it get's there. Let's do that first
+s3,like if ugh if y position of our boat is equal to the y position of the dock
+s2,oh no do greater than so that it can equal to that
+s2,y position of. Yeah that one
+s1,set of first
+s3,dock
+s3,stop simulation
+s3,so that first so change
+s1,we have to set our starting x velocity
+s3,set y position too
+s1,x&y position which should be there
+s1,just do change or set
+s2,what was it at before?
+s3,or that
+s2,oh yeah
+s1,ok what if we open we open this again and see what it is
+s3,so that would be 20.2
+s3,no it should just be 20 right?
+s2,no 20.2 because theres a 10.6 and 10.6
+s3,right
+s3,so 21.2 meters is the [indistinguishable]
+s2,uhhh
+s1,okay wait
+s3,what are you doing? I'm kind of confused
+s1,we don't need to know the width do we?
+s3,"We should know the speed cause we are trying to like, correct for the speed. So like, if we're going 5 this way, and the river is taking us 2 this way."
+s3,see what I'm saying?
+s3,like we don't know our x position of velocity
+s3,what
+s3,cause it should be zero. Ideally.
+s3,it stops at 7.9
+s2,its okay. It cause of how we updated it.
+s1,"yeah, so"
+s1,"if that was a smaller number, it should be more exact."
+s1,"Okay, so then should we should we should use"
+s3,its 2 meters per second for how many seconds does it take to get across?
+s1,what?
+s1,we often need to figure out how long it takes to get across
+s1,long. [indistinguishable] time.
+s3,It depends
+s3,okay so velocity is 2 point
+s1,21:58
+s3,itll get there in 10.65
+s1,22:00
+s3,the smaller you make this the closer it is going to get to
+s2,22:07
+s1,see I told it its not going to change the y
+s3,yeah so we should just change the y
+s3,22:34
+s1,I'm just going to write down the kinematic equations
+s3,22:37
+s3,you don’t need kinematic equations
+OS,22:41
+s3,because you're starting at 5 meters per second and you're tryign to make it across. And you're just trying to see which angle it would go
+OS,22:53
+s3,how do we incorporate
+OS,What are we solving for? To find the resultant speed we have to do the pythagorean theorem
+s3,22:58
+s2,I seriously don’t think the kinematic equations are going to help with this
+s3,23:09
+s1,"what is... what are we solving for what are we trying to find out, that’s what I don't understand."
+s3,we're just trying to get across
+OS,but for variable wise what are we solving for for
+s3,we are trying to cross with the river pushing up
+s3,23:21
+s3,"Yeah, I know so what is that so we started this way and it"
+OS,23:24
+s3,was gonna push us this way. So like what is this like? Like the x
+s3,23:31
+s1,okay wait so if it is going to meters per second. How are you doing the math?
+OS,23:36
+s3,We don't know
+s3,23:45
+OS,I don't know exactly what we are solving for like he said like the theta thing
+s3,23:51
+OS,the angle
+OS,23:55
+s3,it outta be tangent
+OS,23:59
+s1,but like what did you use for your y?
+s1,24:03
+s1,The y was
+s1,24:05
+s1,five x or five over 2?
+s3,so you're using speed not distance
+s3,24:10
+s3,No we are using… yeah we are using speed
+s1,24:14
+s3,Yeah that’s what I don't know like see
+s3,24:18
+s1,wouldn't it be distance? No wouldn't it be speed because you're trying to find it over distance
+s3,24:19
+OS,no you would have to know what position it would take you off of course
+s3,24:31
+OS,I think that thing right there
+s1,its nothing
+s3,24:40
+OS,How do we incorporate the 2 meters per second
+s1,24:43
+OS,5 over 2. if we want to find the resultant speed we use the pythagorean theorem
+s1,24:45
+s3,"here’s the thing, if it takes, if its gonna be pushing us 2 meters per second in that direction we need to figure out how it takes to get across to figure out how it pushes us there"
+s3,25:10
+s3,Oh cause its in meteres per second
+s1,25:15
+s3,I guess we do have to use speed. I guess we would have to use speed because we have to find out how [indistinguishable]
+s1,25:19
+s3,its all we have
+s3,we don’t know the x
+s3,25:25
+s3,so to find the angle what we need to do is find the angle of this
+s1,the angle of that?
+s3,the hyp….
+s3,[indistinguishable]
+s1,[indistinguishable]
+s3,that’s not
+s1,wait
+s3,25:34
+s3,are we trying to find? This one?
+s1,yeah
+s1,so…
+s3,I can do this
+s3,25:40
+s1,So umm oh oh oh yeah its 2
+s3,25:45
+s1,Tangent is adjecent over
+s3,25:48
+s3,"No, it's opposite over adjacent"
+s1,25:49
+s3,SOCATOA so its opposite over adjacent
+s3,25:55
+s3,If you were doing tangent it would be opposite over adjacent but like look
+s1,26:03
+s1,"if you're actually trying to draw a triangle, you'd have to put this here instead. Because like if you're starting here, this isn't like your, this would be the adjacent side. This has nothing to do with the angle. We move that up here. Then if this is the angle we are solving for it would opposite over adjacent which would be 2 over 5"
+s2,26:21
+s1,see what I'm saying?
+s3,26:26
+s2,what would it be instead? 2 over 5?
+s3,26:27
+s1,5… it would be..
+s3,2 right?
+s1,I think it would be the tangent part of that
+s3,yeah it would be 2 over 5
+s3,26:28
+s3,"yeah, it'll be 2 over 5… uhh the tangent of 2 over 5 right?"
+s1,26:39
+s2,I just changed the x velocity
+s1,26:41
+s2,"x would be...wait, no, no x velocity should be the speed of the river."
+s2,Yeah
+s3,26:46
+s1,"Yeah, that's what it should have been."
+s1,That’s how you make it change.
+s3,26:51
+s2,Yeah. And we have to counteract that in our simulation step.
+s3,Yeah
+s3,26:56
+s1,And I'm gonna move it up to right here.
+s3,"And it'll stop at the, it'll stop at the y"
+s2,It'll still stop right there
+s3,Yeah
+s2,And it stops right where it should
+s3,27:05
+s2,So if we set the angle to uhh
+s1,tangent of 2 over 5 is what we are going to use. That'll be our angle right?
+s2,27:11
+s2,err inverse angle
+s1,27:16
+s3,I think it would be inverse
+s2,27:17
+s1,its inverse tangent to find the angles right?
+s3,yeah
+s2,and tangent to find the side
+s3,what?
+s2,27:25
+s2,"Inverse tangent find the angles, regular tangent just finds the sides"
+s1,27:29
+s2,so to find the angle we have to use inverse tangent of…
+s1,27:31
+s3,of 2 divided by 5
+s2,27:37
+s1,You can also do that here.
+s2,27:42
+s1,so 38 degrees. That’s our angle
+s1,27:47
+s3,"which makes sense, because..."
+s1,27:58
+s1,what did you guys get
+s3,we got 23
+s2,Did you guys use tangent or inverse tangent?
+s3,we used tangent
+s2,what?
+s3,why would you use [indistinguishable]
+s1,I thought tangent was just for side length
+s3,28:02
+s2,inverse tangent is for
+s2,yeah inverse tangent for angles
+s3,"ohh you're right, you're right we have to use inverse tangent"
+s3,cause tangent like… yeah
+s2,not side lengths
+s2,28:12
+s3,cause you have to use
+s3,"yeah because if you have to use sides, you get radians"
+s3,28:15
+s1,tangent usually is in degrees
+s3,28:18
+s3,"If you use inverse tangent, it gives you a degree, we got 38. Just try"
+s3,28:31
+s3,What's the heading for this?
+s2,[indistinguishable]
+s3,wait I thought it was 2 over 5
+s2,here I'll just show you what we did
+s3,28:38
+s3,so y over x
+s1,28:41
+s2,"So we were thinking, Okay, so like, this is our angle, right? So this is going"
+s2,okay
+s1,28:55
+s3,"Oh, because…"
+s1,28:57
+s1,You're trying to make a triangle. So we put 2 over here
+s2,that makes sense
+s1,29:09
+s2,What did you do the tangent of?
+s3,29:12
+s2,5 over 2 right? So…
+s2,29:16
+s1,Or we could do a division
+s2,29:19
+s3,and just say um x velocity of the river of y velocity
+s1,29:27
+s1,so this is more applicable.
+s3,yeah I see what you're saying
+s1,29:31
+s1,So it's x velocity over y velocity
+s2,29:35
+s2,Yes. And then what we need to do…
+s2,whoops
+s1,29:40
+s2,uhh then what we need to do uhh
+s1,29:42
+s1,But the opposite of that
+s2,no I think we just add onto the heading
+s2,29:52
+s1,Why are you trying to find that?
+s1,because its part of the question
+s2,29:56
+s1,Is it really?
+s1,yeah it is
+s1,what is it?
+s2,29:58
+s1,You can just use the graph to find that
+s1,"yeah but we don’t have, you need to have variables."
+s1,30:04
+s2,you just have to check. You just have to check the variables
+s1,[talking over each other]
+s2,30:09
+s1,You can also just  check the variables
+s2,30:24
+s1,okay just try that
+s2,30:28
+s1,that ought to make it go more
+s2,okay good good
+s2,that’s not good
+s1,30:33
+s1,That's good. That just means our boat is aiming the right way
+s1,yeah
+s2,30:36
+s1,"Yeah, it's aiming like 30 degrees more or less. So it's gonna go straight,"
+s2,"that’s has nothing to do with, its just like the angle of the boat"
+s2,30:44
+s3,so what we need to do now is change the velocities
+s2,30:54
+s3,by whatever it is
+s2,30:58
+s3,we have to find the velocity of this way
+s2,that’s the opposite
+s3,31:01
+s3,so this is 38 degrees
+s3,31:08
+s3,we have to know the heading but we also need to know the velocity of that way
+s3,that should be 38 degrees also
+OS,31:17
+s3,ueah I know but we have to find the velocity of this line
+OS,okay just do the pythagorean theorem
+s3,31:32
+s3,so 5.4
+OS,31:36
+s3,so square root
+OS,square root of 5 over 2 right?
+s3,yes
+s1,31:43
+OS,why are you using multiplication
+s3,31:46
+s3,cause the square
+OS,31:48
+s3,why don't you just do like power
+OS,31:57
+s3,oh right
+OS,32:00
+s2,"No leave them, you need one of those"
+s2,32:08
+OS,I don’t know how that works though.
+s3,I think its like power
+OS,32:26
+s3,"yeah to power of 2 and 5, power of 2 and 5"
+OS,32:29
+s3,"click it, click it"
+OS,wait 5.39? It should be the square root of 29
+s3,oh yeah right right right
+OS,32:31
+s3,We’re trying to find... I don’t even know what we are doing. We are trying to find the resultant velocity
+OS,32:47
+s3,Isn't there something like heading's velocity?
+OS,heading is just the angle
+s3,32:48
+OS,Can't we just change the x velocity by negative 2? Set the x velocity to negative 2
+s3,32:56
+OS,The problem okay so now we know what our target is
+s3,33:00
+OS,its still going that way
+OS,33:03
+s3,so that's how fast it goes this way
+OS,its still going that way
+s3,33:05
+OS,"This way,"
+s3,33:07
+s3,this can only be five meters per second  because we're going against the river so that means it's going to be slower. Yes.
+s3,33:17
+s1,Right?
+s3,its still going that way
+s2,33:20
+OS,put that in the y velocity
+s3,yeah that is where the y velocity is
+OS,33:28
+s3,but the y velocity won't affect whether it goes right or left
+s2,33:32
+s3,it only effects up and down right?
+OS,33:41
+s3,5 m/s
+OS,no no she's right
+s3,33:45
+OS,if you put in the velocity of the river… you're not change the x velocity
+s3,33:49
+OS,The problem is how fast is it going across the river so you have to take into account you're using the two meters per second of your boat speed to go against it
+s3,did you see that?
+OS1,34:09
+s3,in changing the velocity by 5.38
+OS1,34:16
+s3,so like we need to go this way but we can only go 5 m/s this way and take into account the 2 meters per second to counteract it.
+OS1,34:25
+s3,"So that’s what we have to do. We have to multiply this, change this by -1"
+OS,34:48
+s1,why are you using that?
+OS,that’s what we want
+s3,34:55
+OS1,but now we have to uhhh
+s3,no we just turned around the river
+OS1,yeah
+OS1,because..
+s3,35:03
+s3,yeah we have to show them canceling out. That's what I'm trying to figure out how to do. You can just set it to negative
+OS1,35:11
+s3,"wait. Okay, so then what you have to do is…"
+OS1,35:16
+s2,I totally don't know but
+OS1,35:26
+s3,here is x velocity
+OS1,35:49
+s3,nooo
+OS1,[laughing]
+s2,35:57
+s3,we can’t change x velocity
+s1,it's like a square root function
+s3,okay wait I'm confused now
+s1,it is a square root function cause we're using…
+s3,ooo it starts going the right way but then it kind of curves
+s2,"because of that one time, I'm doing that a bunch of times"
+s3,36:00
+s1,maybe we need to set it
+s3,36:08
+s3,I don't want to set it though
+s1,yeah because if we set it…
+s3,36:12
+s3,just put that after it sets it
+s1,36:13
+s3,it's just gonna redefine… yeah its just going to redefine the thing. Here.
+OS,okay
+s3,36:19
+OS,okay so relabel it.
+s3,okay let me take this off
+OS,36:26
+s3,okay I'm just going to… why is the heading…
+OS,set heading to our angle that we defined.
+s3,that’s what we want
+OS,36:33
+s3,back to square one
+s3,36:36
+s3,and then just change that to change x velocity and then put it up higher
+OS,above no above the second one
+s3,36:44
+s3,"Yeah, because we only want it to do that once"
+s3,yeah
+OS,yeah
+s3,36:57
+OS,why is our heading not?
+s3,because you change x velocity
+OS,37:03
+s1,"but that was after we set the heading you see, we only set it once"
+s3,maybe move that up higher
+s3,you need to set velocity to x velocity of the river
+OS,37:17
+s3,what's the resultant velocity? I'm just curious
+OS,37:32
+s3,see that's whats wrong
+OS,because that’s cause we took it out
+OS,see [indistinguishable]
+OS,yeah they are
+s3,37:36
+s3,but if the boat is still able... the boat shouldn't be going five meters per second up
+s3,37:39
+OS,that’s what I'm trying to figure out
+OS,but it should
+s3,37:41
+OS,"but it shouldn't, if we did work against the river then that should take away from the boat's engine power"
+s2,37:48
+OS,"like instead of like, is that a part of your propeller is going this way and this is going straight this way"
+OS,37:53
+s3,your propeller this way so its not straight so you're using some of your speed but I don't know how you right that
+OS,that’s the square root functions
+s3,38:08
+OS1,oh wait
+s3,"Okay, changing it by the velocity every time so you're like doubling it or halving it"
+OS1,38:14
+OS,but I only want to do that once that’s the problem. Wait
+s3,38:29
+OS,you're going to have to set it before
+s3,or you could do that…
+OS,38:32
+s3,can I see it real quick
+OS,38:45
+s1,wait I have an idea
+OS,38:51
+s1,I have an idea can I try something?
+s3,that’s why it doesn't.. It doesn't set the heading because you have to set. Velocity isn't set before the heading is. So you have to…
+s3,ohhh
+OS,so its using the velocity from last
+s3,38:52
+01:13:46,let me just
+OS,yeah go ahead but then I have an idea if I can remember it
+s3,38:58
+s3,here
+OS,oh
+s3,39:02
+OS,Alright but we're still not getting that speed change
+s3,yeah okay so what if…
+OS,39:26
+s3,we did this guy…
+s3,39:29
+OS,why are you adding an if statement?
+s3,39:30
+OS,is there a not equal?
+OS,39:36
+s3,yeah just put a not
+s3,and the equal yeah
+s2,39:40
+s3,no you have to put the equal inside the not
+s1,39:47
+s3,"I have to go to the bathroom, I'll be right back"
+s1,okay
+s3,40:00
+s3,what were you thinking?
+s2,one second
+s1,40:05
+s3,"I'm not sure, I have an idea but its not quite [indistinguishable]"
+s3,40:12
+s1,I feel like this is right
+s1,this is…
+s3,40:16
+s1,but that’s the same thing
+[discussion with Dr. Biswas and the class],"yeah because it isn't 0, its 2"
+NA,yeah its 2
+NA,40:25
+NA,right. Okay.
+NA,the problem is if we are calling…
+NA,40:33
+NA,let me just see what the heading is
+NA,40:55
+NA,its not 21 degrees
+NA,41:18
+NA,what if we moved this… wait
+NA,41:19
+NA,the heading is not right
+NA,41:37
+NA,y'all had 22 didn't you? The first time you did it
+NA,ooo wait wait can you flip these?
+NA,wait why?
+NA,because… now do it
+NA,I want to see if it…
+NA,its 68…
+NA,yeah that’s not right
+NA,41:42
+NA,it's supposed to be 38 degrees
+NA,41:45
+NA,I think this is right
+NA,41:48
+NA,"supposed to be 38 degrees, but it's not"
+NA,42:26
+NA,Okay the thing is the velocity should be 0. that’s the goal.
+NA,the x velocity should be 0 but
+NA,yeah that’s the goal so its right
+NA,42:30
+NA,"lets ask, we've exhausted all our options so far"
+NA,I think its right
+NA,cause…
+NA,42:38
+NA,I don’t.
+NA,42:42
+NA,"first of all, the heading is not right."
+NA,42:46
+NA,I just think it’s the heading part you are starting it at 0 and then literally setting something right after it.
+NA,43:08
+NA,I'm going to see if we did something
+NA,43:15
+NA,wait [OS name] did you all get it?
+NA,43:21
+NA,okay sorry I just wanted to try something
+NA,so I changed the river uh river's velocity and it worked.
+NA,43:23
+NA,what?
+NA,43:24
+NA,I changed the river's velocity to 10 and it still worked
+NA,43:41
+NA,yes because that's how we set it up.
+NA,yeah. which is good
+NA,43:46
+NA,But I had an idea
+NA,whoops
+NA,yeah that’s too much
+NA,43:48
+NA,alright I have an idea
+NA,"I know how to set the velocity, like the final velocity because of what we know."
+NA,I need a pen
+NA,44:03
+NA,so like I just figure it out. So we are going this way right.
+NA,44:11
+NA,the angle you set it at
+NA,"no not the angle, its like 38"
+NA,44:14
+NA,the heading angle has absolutely no effect on it.
+NA,44:16
+NA,No it doesn't but now I know how to control the speed. We know it should we know it can only go 5 m/s this way and we are forcing it to go 2 m/s this way so all we have to do it solve for this.
+NA,44:25
+NA,so we have like a squared plus wait 2 squared equals 5 squared or either way.
+NA,44:32
+NA,Wait ooo oo
+NA,44:37
+NA,all this is going to tell us is how fast its going straight.
+NA,44:41
+NA,no its already telling you how fast its going straight. Its going 5 m/s straight.
+NA,44:45
+NA,It shouldn't though because like if your boat is this way and you're putting all your propulsion straight back you'd get 5 m/s right? Right?
+NA,44:47
+NA,so you're saying the river's slowing down the boat
+NA,44:53
+NA,"the river is not going to slow down the boat whatsoever because the river is not flowing backwards, its flowing to the right."
+NA,but if you’re having to counteract the force of the river technically there should be some like resistance.
+NA,45:17
+NA,"because like your boat's not pointed straight, its pointed this way, like you're not going straight your more like angled"
+NA,45:20
+NA,"saying the head angle, even if the boat is a head angle or this way, it's still going to move as if the heading like this way the head angle has no effect. It should, but it doesn't. But it doesn't. It's just coded. We're going to be negative."
+NA,it should though
+NA,but it doesn't
+NA,but it should
+NA,but it doesn't. its just coded weird.
+NA,it should be negative.
+NA,"No, no, no. I'm saying no, if you test it out it doesn't move in this direction."
+NA,no yeah I know that.
+NA,If its heading that way and you just change the y velocity.
+NA,no I know that.
+NA,45:50
+NA,so basically what I'm saying is you have your angel right? It should be like 68.2 degrees
+NA,45:54
+NA,We got like 38 or something.
+NA,45:55
+NA,I don't know how you got 38 but okay.
+NA,45:57
+NA,Did you do tan inverse of 5 over 2?
+NA,why? That’s wrong.
+NA,46:01
+NA,y over x
+NA,46:08
+NA,but its not though because like this is our triangle. This this and this. And this is our angle. So its opposite over adjacent. You see what I'm saying?
+NA,46:16
+NA,"Okay okay you're complicating it. Its not that complicated. 5 m/s, 2 m/s"
+NA,it is.
+NA,"Its not that complicated. 5 m/s, 2 m/s"
+NA,yes so what's your triangle.
+NA,46:24
+NA,"Okay, okay, so basically like five to your triangle's right here. You're using this theta. So this is going to be like 5.4 tan inverse for 68 but that’s just for the degrees, the other thing isn't that complicated. So"
+NA,yeah
+NA,46:37
+NA,"So, you know, you just have to counteract. what do you have to counteract? What is the only force that you have to counteract?"
+NA,46:47
+NA,the x velocity
+NA,that's right
+NA,how would you counteract that?
+NA,in real life…
+NA,yeah in real life but in this how would you counteract it?
+NA,46:51
+NA,you'd just subtract 2
+NA,okay that’s all you have to do
+NA,I know
+NA,47:00
+NA,"I'm fixing this, this has been bothering me"
+NA,x velocity of the river
+NA,whats 5 …
+NA,47:04
+NA,25 minus
+NA,47:09
+NA,so this would be the square root of 25
+NA,okay wait
+NA,47:12
+NA,squared root of 25
+NA,okay what is this for?
+NA,47:15
+NA,find the x y resultant velocity of the boat
+NA,[indistinguishable]
+NA,47:20
+NA,i know we don't have to do it this way but
+NA,47:27
+NA,y velocity is always going to be 5
+NA,what is 5.8
+NA,the resultant is the hypotenuse right?
+NA,yes which is 5 right?
+NA,but it should be 5. see the problem. because the boat can only go 5 meters per second.
+NA,47:41
+NA,river is also added to the speed
+NA,47:42
+NA,but if you're going against the river
+NA,47:46
+NA,what are you talking about the speed or the time?
+NA,the speed
+NA,the speed is the square root of 21
+NA,[indistinguishable]
+NA,yeah
+NA,I agree with you
+NA,47:58
+NA,wait how did you get the square root of 21?
+NA,cause he's using the…
+NA,48:06
+NA,ohh cause you subtract two right? Okay.
+NA,yeah you subtract the 2
+NA,48:08
+NA,Wait is the river not acutally doing anything? Its just a hypothetical
+NA,yeah
+NA,48:12
+NA,why? Why would they give us that?
+NA,48:15
+NA,"All right, we could still do it."
+NA,yeah its the same
+NA,48:19
+NA,so then we have to set the
+NA,its still easy
+NA,set the x velocity
+NA,hold up how long is the river?
+NA,48:24
+NA,21 insh
+NA,21.2 divided by 4.58.
+NA,48:37
+NA,So
+NA,48:39
+NA,"4.26, 4.26 seconds"
+NA,okay
+NA,48:43
+NA,okay so what was the math there
+NA,48:45
+NA,do the square root
+NA,oh yeah the square root of 20 while the square root of
+NA,you have to put it in velocity
+NA,48:53
+NA,this is velocity
+NA,no you have to put it in the y velocity.
+NA,oh yeah yeah
+NA,49:00
+NA,that’s velocity right there
+NA,yeah yeah
+NA,ummm
+NA,I think you have to take that off too
+NA,why?
+NA,I want to leave it here
+NA,49:09
+NA,its not x velocity equals 0
+NA,if the x velocity is not 0
+NA,49:13
+NA,The resultant velocity has to be faster than 5 meters
+NA,with the river
+NA,49:17
+NA,cause if its going against the river it has to go faster
+NA,but it can't go that fast
+NA,no it can
+NA,why?
+NA,x velocity is 5
+NA,"the boat can only, the boat engine is 5 m/s"
+NA,49:29
+NA,"But I'm saying to overcome it you have to go faster. So what you did is this, right? You did negative two and then you do five and then this right?  but negative two squared is still 4."
+NA,"Yeah, all right,"
+NA,49:39
+NA,"I know. You're correct, but you cant have negative velocity of the river, its always positive"
+NA,49:41
+NA,you can't.
+NA,49:46
+NA,"Right, right. I'm saying Either way, it's gonna be 5.4 is always resultant. Which doesn't make sense, correct."
+NA,that why I'm fixing it.
+NA,but the square root of 21 makes sense. It makes perfect sense.
+NA,square root of 2 squared which was power of uhh we already did this didn't we?
+NA,no I'm saying cause the river adds its velocity
+NA,what?
+NA,why are you doing? Why power
+NA,50:20
+NA,"lets just do this squared, x squared."
+NA,50:22
+NA,I'm pretty sure the resultant velocity is still 5.4
+NA,50:28
+NA,the boat can go at a maximum speed of 5
+NA,50:34
+NA,so realistically could never go 5.4 against the river cause you'd just subtract the difference. So you'd take that .4 and subtract it from 5 cause you're going against it.
+NA,50:49
+NA,which is how we got 4.6
+NA,you have 4.6 as the resultant?
+NA,50:52
+NA,"Because you're right its 5.4 with the river, so that .4 subtracted since you're going against the river now gives you 4.6"
+NA,51:02
+NA,do you have.. could you do sin of um x?
+NA,sin or inverse sin
+NA,51:13
+NA,sin of 4.6
+NA,51:15
+NA,sin of 4.6 equals x over 60. sin of 68 equals x over 4.6
+NA,do sin of 68 times 4
+NA,51:37
+NA,its negative. Its negative 3.6
+NA,this should be correct
+NA,51:44
+NA,wait x is what? X can't be that. See that’s why
+NA,cause that means that youre one..
+NA,but its not
+NA,51:53
+NA,now do um sin of 68 times 5.4.
+NA,want me to get my calculator?
+NA,51:59
+NA,"See, how its closer to five."
+NA,52:02
+NA,"Because I'm saying is, buy your logic the x, The y velocity then isn't 5 anymore. It's 3.5."
+NA,what? Why are you using sin?
+NA,52:13
+NA,"Okay, okay, imagine this. This is your triangle, right?"
+NA,52:17
+NA,"we took our boat here, started it at y, our dock is at 10.6"
+NA,our dock is at 12
+NA,52:29
+NA,your dock? Oh
+NA,I don’t know why
+NA,52:35
+NA,"[s3 name] Alright, so this is theta right? So this is 68.2 degrees right?"
+NA,[indistinguishable]
+NA,52:42
+NA,"All right, so I'm saying the resultant velocity has to be 5 because you're saying this is 4.16?"
+NA,uhhh speed wise?
+NA,52:53
+NA,"No, what is this? The resultant velocity. you're saying is it should be 4.6? It's not, its 5.4 because If this is y and this is x, right? So you agree that sine of 68.2 has to equal y over adjacent, over 4.6."
+NA,opposite over hypotenuse
+NA,"Right? So over here, ISo y equals sine of 68.2 times 4.6. Right? This should be equal, right?"
+NA,53:23
+NA,That's not 4.6. That's the
+NA,53:24
+NA,but you're saying it is
+NA,no you're going this way is 4.6
+NA,oh yeah yeah yeah the y is 4.6
+NA,53:27
+NA,That's where you're getting it wrong.
+NA,53:31
+NA,You're saying this is 4.6?
+NA,yes and this is 5
+NA,53:35
+NA,but the y is 5
+NA,53:37
+NA,but the y isnt 5 because the y is how fast our boat is going
+NA,53:40
+NA,"let me show you this. So the way this is set up, our boat  needs to go this way, the river ges this way, and this is that angle. Correct?"
+NA,Okay
+NA,cause over here we are doing 2 meters per second up the river which is going in the same direction which means our results velocity is 5.4 meters per second.
+NA,53:59
+NA,right.
+NA,54:01
+NA,"if we are going in the opposite direction, so really its going not with the 2 meters per second, its going against the 2 m/s so realistically this should be and this should be and can only be 5 now."
+NA,54:18
+NA,so are you saying that it's going to go 4.6 this direction?
+NA,this would be 4.6
+NA,54:24
+NA,"because because instead of, before this was only the x but now the hypotenuse is the speed now, because we are going against the river because our boat turned, instead of going straight our boat turned."
+NA,54:41
+NA,"Okay, I get what you're saying, like it's gonna like"
+NA,54:44
+NA,so you're using
+NA,I got it I got
+NA,54:48
+NA,this would be theta and this would be negative 2 or 2 but you'd subract it and get
+NA,that makes sense
+NA,55:00
+NA,great!
+NA,so intense
+NA,55:09
+NA,wait its not right though
+NA,it is
+NA,its not
+NA,why not
+NA,run the simulation
+NA,whats our boats y velocity? Why is it 5?
+NA,55:17
+NA,What's happening right now?
+NA,55:19
+NA,Okay just set the square root of the
+NA,55:25
+NA,of the y velocity
+NA,but the y velocity
+NA,[indistinguishable - talking over each other]
+NA,55:27
+NA,the y velocity
+NA,why don't we set that at the end?
+NA,55:31
+NA,it has to change when
