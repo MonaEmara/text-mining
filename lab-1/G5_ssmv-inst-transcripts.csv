@@ -1,0 +1,108 @@
+ID,Talk
+s1,you should just do update position. They set a block equal to 
+S2 (girl),where is it? 
+S1,the y position here
+S3,so what is it doing is it
+S3,because you're not updating the velocity
+s1,"why don't you just set the y velocity before the simulation,"
+s3,oh right
+s3,huh?
+s3,set y velocity before the simulation
+s1,it doesn't do anything
+s3,maybe update position doesn't do
+s1,oh yeah you're right
+s1,let's just not use that one
+s3,so just do
+s3,change y you have to change the y position by
+s3,delta t times the velocity
+s3,Or you can change to that because you have to change the x and y
+s3,not yet right now we're just doing
+s3,right now we're seeing if it can move up.
+s3,"I mean, we're given an X and y grid on that so"
+s1,there we go that's it
+s1,so first let's do our if statements so let's stop it when it get's there. Let's do that first
+s3,like if ugh if y position of our boat is equal to the y position of the dock
+s2,oh no do greater than so that it can equal to that
+s2,y position of. Yeah that one
+s1,set of first
+s3,dock
+s3,stop simulation
+s3,so that first so change 
+s1,we have to set our starting x velocity 
+s3,set y position too
+s1,x&y position which should be there
+s1,just do change or set
+s2,what was it at before?
+s3,or that
+s2,oh yeah
+s1,ok what if we open we open this again and see what it is
+s3,so that would be 20.2
+s3,no it should just be 20 right?
+s2,no 20.2 because theres a 10.6 and 10.6
+s3,right
+s3,so 21.2 meters is the [indistinguishable]
+s2,uhhh
+s1,okay wait
+s3,what are you doing? I'm kind of confused
+s1,we don't need to know the width do we?
+s3,"We should know the speed cause we are trying to like, correct for the speed. So like, if we're going 5 this way, and the river is taking us 2 this way."
+s3,see what I'm saying?
+s3,like we don't know our x position of velocity
+s3,what
+s3,cause it should be zero. Ideally.
+s3 ,it stops at 7.9
+s2,its okay. It cause of how we updated it.
+s1,"yeah, so"
+s1,"if that was a smaller number, it should be more exact. "
+s1," Okay, so then should we should we should use"
+s3,its 2 meters per second for how many seconds does it take to get across?
+s1,what?
+s1,we often need to figure out how long it takes to get across
+s1,long. [indistinguishable] time.
+s3,It depends 
+s3,okay so velocity is 2 point
+s3,itll get there in 10.65
+s3,the smaller you make this the closer it is going to get to
+s1,see I told it its not going to change the y
+s3,yeah so we should just change the y
+s1,I'm just going to write down the kinematic equations
+s3,you don’t need kinematic equations
+s3,because you're starting at 5 meters per second and you're tryign to make it across. And you're just trying to see which angle it would go
+s3,how do we incorporate
+OS,What are we solving for? To find the resultant speed we have to do the pythagorean theorem
+s2,I seriously don’t think the kinematic equations are going to help with this
+s1,"what is... what are we solving for what are we trying to find out, that’s what I don't understand."
+s3,we're just trying to get across
+OS,but for variable wise what are we solving for for
+s3,we are trying to cross with the river pushing up
+s3,"Yeah, I know so what is that so we started this way and it"
+s3,was gonna push us this way. So like what is this like? Like the x
+s1,okay wait so if it is going to meters per second. How are you doing the math?
+s3,We don't know
+OS,I don't know exactly what we are solving for like he said like the theta thing 
+OS,the angle
+s3,it outta be tangent
+s1,but like what did you use for your y? 
+s1,The y was
+s1,five x or five over 2? 
+s3,so you're using speed not distance
+s3,No we are using… yeah we are using speed
+s3,Yeah that’s what I don't know like see
+s1,wouldn't it be distance? No wouldn't it be speed because you're trying to find it over distance
+OS,no you would have to know what position it would take you off of course
+OS,I think that thing right there 
+s1,its nothing
+OS,How do we incorporate the 2 meters per second
+OS,5 over 2. if we want to find the resultant speed we use the pythagorean theorem
+s3,"here’s the thing, if it takes, if its gonna be pushing us 2 meters per second in that direction we need to figure out how it takes to get across to figure out how it pushes us there"
+s3,Oh cause its in meteres per second
+s3,I guess we do have to use speed. I guess we would have to use speed because we have to find out how [indistinguishable]
+s3,its all we have
+s3,we don’t know the x
+s3,so to find the angle what we need to do is find the angle of this
+s1,the angle of that?
+s3,the hyp….
+s3,[indistinguishable]
+s1,[indistinguishable]
+s3,that’s not
+s1,wait

@@ -30,13 +30,13 @@ Use the institutional library (e.g. [NCSU Library](https://www.lib.ncsu.edu/#art
 
     -   How does the visualization address research questions?
 
-    -   The paper presents	 an	 overview	 of	 the	measures	and	potential	of	a	multi-method	approach	 for	studying	learning	via	social	media.
+    -   The paper presents an overview of the measures and potential of a multi-method approach for studying learning via social media.
 
     -   In terms of text mining, the visualization shows
 
         -   Most frequently used words.
 
-        -   The	category	of	frequent	words.
+        -   The category of frequent words.
 
         -   Following topics over time.
 
@@ -62,8 +62,8 @@ I highly recommend creating a new R script in your lab-1 folder to complete this
 
 ```{r, my-data-product}
 # YOUR FINAL CODE HERE
-opd_survey <- read_csv("data/opd_survey.csv")
-glimpse(opd_survey) 
+opd_survey <- readr::read_csv("data/opd_survey.csv")
+dplyr::glimpse(opd_survey) 
 
 # look at just the first six entries
 head(opd_survey) 
@@ -71,79 +71,7 @@ head(opd_survey)
 # or the last six entries
 tail(opd_survey) 
 
-# view the names of your variables or columns
-names(opd_survey)
-write_csv(opd_survey, "data/opd_survey_copy.csv")
-opd_selected <- select(opd_survey, Role, Resource...6, Q21)
-# or view in source pane
-opd_teacher <- opd_survey %>%
-  select(Role, Resource...6, Q21) %>%
-  rename(text = Q21) %>%
-  slice(-1, -2) %>%
-  na.omit() %>%
-  filter(Role == "Teacher")
 
-head(opd_teacher)
-opd_selected <- select(opd_survey, Role, Resource...6, Q21)
-opd_renamed <- rename(opd_selected, text = Q21)
-opd_sliced <- slice(opd_renamed, -1, -2)
-opd_complete <- na.omit(opd_sliced)
-opd_teacher <- filter(opd_complete, Role == "Teacher")
-opd_teacher <- opd_survey %>%
-  select(Role, Resource...6, Q21) %>%
-  rename(text = Q21) %>%
-  slice(-1, -2) %>%
-  na.omit() %>%
-  filter(Role == "Teacher")
-
-head(opd_teacher)
-opd_tidy <- unnest_tokens(opd_teacher, word, text)
-
-head(opd_tidy)
-opd_tidy <- opd_survey %>%
-  select(Role, Resource...6, Q21) %>%
-  rename(text = Q21) %>%
-  slice(-1, -2) %>%
-  na.omit() %>%
-  filter(Role == "Teacher") %>%
-  unnest_tokens(word, text)
-
-head(opd_tidy)
-head(stop_words)
-
-opd_clean <- anti_join(opd_tidy, stop_words)
-
-head(opd_clean)
-opd_counts <- count(opd_clean, word, sort = TRUE)
-
-# alternatively, we could have use the %>% operator to yield the same result.
-
-opd_counts <- opd_clean %>% 
-  count(word, sort = TRUE)
-
-opd_counts
-opd_resource_counts <- opd_clean %>%
-  count(Resource...6, word, sort = TRUE)
-
-opd_frequencies <- opd_clean %>%
-  count(Resource...6, word, sort = TRUE) %>%
-  group_by(Resource...6) %>%
-  mutate(proportion = n / sum(n))
-
-opd_frequencies
-opd_words <- opd_teacher %>%
-  unnest_tokens(word, text) %>%
-  count(Resource...6, word, sort = TRUE)
-
-head(opd_words)
-total_words <- opd_words %>%
-  group_by(Resource...6) %>%
-  summarise(total = sum(n))
-
-total_words
-opd_totals <- left_join(opd_words, total_words)
-
-opd_totals
 ```
 
 ### Knit & Submit
