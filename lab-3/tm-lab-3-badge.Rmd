@@ -1,7 +1,7 @@
 ---
 title: 'Sentiment Analysis Badge'
 subtitle: "LASER Institute TM Learning Lab 2"
-author: "Dr. Shiyan Jiang"
+author: "Dr. Mona Emara"
 date: "`r format(Sys.Date(),'%B %e, %Y')`"
 output: html_document
 ---
@@ -26,25 +26,25 @@ Use the institutional library (e.g. [NCSU Library](https://www.lib.ncsu.edu/#art
 
 1.  Provide an APA citation for your selected study.
 
-    -   
+Erkens, M., Bodemer, D., & Hoppe, H. U. (2016). Improving collaborative learning in the classroom: Text mining based grouping and representing. International Journal of Computer-Supported Collaborative Learning, 11, 387-415.  
 
 2.  How does topic modeling address research questions?
 
-    -   
+The paper address how the analysis and visualization of cognitive information can be supported by automatic mechanisms (especially using text mining), and what effects a corresponding tool can achieve in the classroom.  
 
 Draft a research question for a population you may be interested in studying, or that would be of interest to educational researchers, and that would require the collection of text data and answer the following questions:
 
 1.  What text data would need to be collected?
 
-    -   
+    written homework such as essays or wiki entries.  
 
 2.  For what reason would text data need to be collected in order to address this question?
 
-    -   
+    -   These texts are externalizations of knowledge and provide unstructured data to be analyzed.
 
 3.  Explain the analytical level at which these text data would need to be collected and analyzed.
 
-    -   
+    -  Identifying which parts of a text represent specific topics in a relative view. 
 
 ### Part II: Data Product
 
@@ -54,7 +54,58 @@ I highly recommend creating a new R script in your lab-3 folder to complete this
 
 ```{r, my-data-product}
 # YOUR FINAL CODE HERE
+library(tidyverse)
+library(tidytext)
+library(SnowballC)
+library(topicmodels)
+library(stm)
+library(ldatuning)
+#library(knitr)
+library(LDAvis)
+ts_forum_data <- read_csv("data/ts_forum_data.csv", 
+     col_types = cols(course_id = col_character(),
+                   forum_id = col_character(), 
+                   discussion_id = col_character(), 
+                   post_id = col_character()
+                   )
+    )
+forums_tidy <- ts_forum_data %>%
+  unnest_tokens(output = word, input = post_content) %>%
+  anti_join(stop_words, by = "word")
 
+forums_tidy
+forums_tidy <- ts_forum_data %>%
+  unnest_tokens(output = word, input = post_content) %>%
+  anti_join(stop_words, by = "word")
+
+forums_tidy
+forums_tidy %>%
+  count(word, sort = TRUE)
+forum_quotes <- ts_forum_data %>%
+  select(post_content) %>% 
+  filter(grepl('time', post_content))
+
+sample_n(forum_quotes,10)
+forums_dtm <- forums_tidy %>%
+  count(post_id, word) %>%
+  cast_dtm(post_id, word, n)
+class(forums_dtm)
+
+forums_dtm
+stemmed_forums <- ts_forum_data %>%
+  unnest_tokens(output = word, input = post_content) %>%
+  anti_join(stop_words, by = "word") %>%
+  mutate(stem = wordStem(word))
+
+stemmed_forums
+n_distinct(ts_forum_data$forum_name)
+
+forums_lda <- LDA(forums_dtm, 
+                  k = 20, 
+                  control = list(seed = 588)
+                  )
+
+forums_lda
 
 ```
 
