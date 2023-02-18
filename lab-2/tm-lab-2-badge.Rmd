@@ -36,11 +36,11 @@ Draft a research question for a population you may be interested in studying, or
 
 1.  What text data would need to be collected?
 
-    -   
+    -   Messages collected from Twitter, Facebook and Moodle. 
 
 2.  For what reason would text data need to be collected in order to address this question?
 
-    -   
+    - studying the sentiment polarity about specific course.  
 
 3.  Explain the analytical level at which these text data would need to be collected and analyzed.
 
